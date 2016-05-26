@@ -1,0 +1,31 @@
+name       : nuvola-all-services
+version    : 1.0
+release    : 1
+source     :
+    - https://solus-project.com/sources/README.Solus : 65dcffb5d782abf60609195cc3e00eb55a9f02cb200441f498e4e30c11d1009e
+license    : MIT
+component  : desktop.multimedia
+summary    : A metapackage for all Nuvola Player 3 integrations.
+description: |
+    A metapackage for all Nuvola Player 3 integrations.
+extract    : no
+rundeps    :
+    - nuvola-app-8tracks
+    - nuvola-app-amazon-cloud-player
+    - nuvola-app-bandcamp
+    - nuvola-app-deezer
+    - nuvola-app-google-calendar
+    - nuvola-app-google-play-music
+    - nuvola-app-groove
+    - nuvola-app-jango
+    - nuvola-app-logitech-media-server
+    - nuvola-app-mixcloud
+    - nuvola-app-owncloud-music
+    - nuvola-app-plex
+    - nuvola-app-soundcloud
+    - nuvola-app-spotify
+    - nuvola-app-tunein
+    - nuvola-app-yandex-music
+install    : |
+    install -D -m 00644 $sources/README.Solus $installdir/usr/share/doc/$package/README
+    
